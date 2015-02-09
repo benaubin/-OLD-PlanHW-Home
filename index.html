@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
@@ -22,17 +22,25 @@
 <!-- Navbar -->
 <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <a href="index.html" class="navbar-brand">
-            PlanHW
-        </a>
-        <button type="button" class="btn btn-default navbar-toggle"
-                data-toggle="collapse"
-                data-target=".navbar-collapse">
-            <span class="sr-only">Toggle Navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
+        <div class="navbar-header">
+            <div class="logo hidden-xs">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/PlanHWtrans.png" height="75px">
+                </a>
+            </div>
+            <div class="visible-xs">
+                <a href="index.html" class="logo-text navbar-brand">
+                    PlanHW
+                </a>
+            </div>
+            <button type="button" class="btn btn-default navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
         <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
             <li><a href="#about">About</a></li>
             <li><a href="#signup">Sign Up</a></li>
@@ -45,7 +53,7 @@
 <div class="container">
     <div class="row well well-lg">
         <div class="col-md-6 col-sm-12">
-            <h2>Planners Suck</h2>
+            <h2>Planners = Bad</h2>
             <p class="lead">Take a look at yours. Planners are a pain to use. They were designed for having a job.
                 You don't. You're a student. You need a better planner. You need PlanHW.</p>
             <button type="button" class="btn btn-lg btn-success">Sign up</button>
