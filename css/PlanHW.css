@@ -1,3 +1,8 @@
+.parallax-window {
+    background: transparent;
+    min-height: 100px;
+    padding-bottom: 10px;
+}
 body {
     padding-top: 110px;
 }
@@ -7,4 +12,27 @@ body {
 .logo-text {
     padding-top: 24px;
     font-size: 48px;
+}
+.main {
+    padding-bottom: 36px;
+}
+.messy-desk {
+    min-height: 300px;
+    padding-bottom: 20px;
+}
+
+.unclutter {
+    padding-top: 100px;
+}
+.books {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    min-height: 200px;
+}
+.who-are-we {
+    padding-bottom: 40px;
+}
+.who {
+    padding-top: 25px;
+    padding-bottom: 50px;
 }
