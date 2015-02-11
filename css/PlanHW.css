@@ -26,4 +26,13 @@ body {
 }
 .books {
     padding-top: 100px;
+    padding-bottom: 50px;
+    min-height: 200px;
+}
+.who-are-we {
+    padding-bottom: 40px;
+}
+.who {
+    padding-top: 25px;
+    padding-botton: 50px;
 }
