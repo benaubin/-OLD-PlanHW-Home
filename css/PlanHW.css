@@ -36,3 +36,15 @@ body {
     padding-top: 60px;
     padding-bottom: 50px;
 }
+footer {
+    background-color: #0f0f0f;
+}
+footer h3 {
+    color: #cccccc;
+}
+footer a {
+    color: #696C6A;
+}
+footer p {
+    color: #696C6A;
+}
