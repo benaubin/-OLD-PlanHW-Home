@@ -6,6 +6,10 @@
 body {
     padding-top: 110px;
 }
+.features {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 .navbar {
     padding-bottom: 50px;
 }
@@ -20,7 +24,6 @@ body {
     min-height: 300px;
     padding-bottom: 20px;
 }
-
 .unclutter {
     padding-top: 100px;
 }
@@ -33,18 +36,13 @@ body {
     padding-bottom: 40px;
 }
 .who {
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 footer {
     background-color: #0f0f0f;
+    color: #696C6A;
 }
 footer h3 {
     color: #cccccc;
-}
-footer a {
-    color: #696C6A;
-}
-footer p {
-    color: #696C6A;
 }
