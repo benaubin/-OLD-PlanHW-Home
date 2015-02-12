@@ -2,6 +2,10 @@ $(function() {
     $(".sign-up").addClass("sign");
     $(".sign-in").addClass("sign");
     disable();
+    /*var hash = window.location.hash;
+    if(hash === ("bensites")) {
+        $(".nav-list").append($('<li><a href="http://bensites.com">BenSites</a></li>'));
+    }*/
 });
 
 
