@@ -1,16 +1,38 @@
 $(function() {
     $(".sign-up").addClass("sign");
     $(".sign-in").addClass("sign");
+
+    addNavBack("BenSites", "bensites", "http://bensites.com");
+
     disable();
-    var hash = document.URL.substr(document.URL.indexOf('#')+1)
-    console.log(hash);
-    if(hash.toString() == "bensites".toString()) {
-        $(".nav-list").append($('<li><a href="http://bensites.com">Back To BenSites</a></li>'));
-    }
+    mobileFooter()
 });
 
+function addNavBack(name,hash,link){
+    if(containsHash(hash))
+        $(".nav-list").append($('<li><a href=' + link + '>Back To ' + name + '</a></li>'));
+}
 
+function containsHash(urlHash){
+    var hash = document.URL.substr(document.URL.indexOf('#')+1);
+    console.log(hash);
+    return(hash.toString() === urlHash.toString());
+}
 
+function mobileFooter(){
+    $(".mobile-footer-phone").click(function(event){
+        event.preventDefault();
+        $(this).text("(512) 763-2360");
+    });
+    $(".mobile-footer-email").click(function(event){
+        event.preventDefault()
+        $(this).text("hello@planhw.com").attr("href","mailto:hello@planhw.com?subject=Hello")
+    })
+    $(".mobile-footer-twitter").click(function(event){
+        event.preventDefault()
+        $(this).text("@PlanHW").attr("href","https://twitter.com/planhw")
+    })
+}
 
 function disable(){
     var sign = $(".sign");
