@@ -1,6 +1,9 @@
 body {
     padding-top: 110px;
 }
+#mc_embed_signup{
+    background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
+}
 .parallax {
     background: transparent;
     min-height: 100px;
