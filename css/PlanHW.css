@@ -43,6 +43,15 @@ footer {
     background-color: #0f0f0f;
     color: #696C6A;
 }
+footer a {
+    color: #696C6A;
+}
+footer p {
+    color: #696C6A;
+}
 footer h3 {
     color: #cccccc;
+}
+.greyish {
+    color: #696C6A;
 }
