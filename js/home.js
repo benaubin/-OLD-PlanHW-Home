@@ -4,7 +4,7 @@ $(function() {
 
     addNavBack("BenSites", "bensites", "http://bensites.com");
 
-    disable();
+    disable(".sign");
     mobileFooter()
 });
 
@@ -34,13 +34,12 @@ function mobileFooter(){
     })
 }
 
-function disable(){
-    var sign = $(".sign");
-
-    sign.attr("href","");
-    sign.click(function( event ) {
-        alert( "Sorry, most functionality is not available yet. Please check back before next school year." );
+function disable(Class){
+    var disabled = $(Class);
+    disabled.attr("href","#updates");
+    disabled.click(function( event ) {
+        alert( "Sorry, most functionality is not available yet. Please sign up for updates." );
         $(this).hide( "slow" );
-        event.preventDefault();
+        window.location.replace("#updates")
     });
 }
