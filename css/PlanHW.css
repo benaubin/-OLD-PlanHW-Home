@@ -1,5 +1,6 @@
 body {
     padding-top: 110px;
+    position: relative;
 }
 #mc_embed_signup{
     background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
@@ -54,4 +55,8 @@ footer p {
 }
 footer h3 {
     color: #cccccc;
+}
+.pricing {
+    background-color: #e0e6e3;
+    min-height: 50px;
 }
