@@ -9,7 +9,7 @@
         <!-- Some SEO -->
         <meta name="description" content="Homework planners are horrible. A pain to use, they were designed for having a job.
                 You're a student. You need a better planner. You need PlanHW." >
-        <meta name="keywords" itemprop="keywords" content="PlanHW, planhw, plan hw, planner, homework planner, homework 2015,
+        <meta name="keywords" content="PlanHW, planhw, plan hw, planner, homework planner, homework 2015,
             how to plan homework, homework, iStudiez, iHomework, The Homework App, BenSites" />
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image"/>
@@ -26,253 +26,373 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
         <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <!-- Custom styles for the prcing table -->
+        <link href="css/pricing.css" rel="stylesheet">
 
         <!-- PlanHW CSS -->
         <link rel="stylesheet" href="css/PlanHW.css">
 
         <title>PlanHW - Your homework planner</title>
     </head>
-    <!-- Navbar -->
-    <header>
-        <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <div class="logo hidden-xs">
-                    <a href="index.html" class="navbar-brand">
-                        <img src="img/PlanHWtrans.png" height="75px">
-                    </a>
-                </div>
-                <div class="visible-xs">
-                    <a href="#home" class="logo-text navbar-brand">
-                        PlanHW
-                    </a>
-                </div>
-                <button type="button" class="btn btn-default navbar-toggle" data-toggle="collapse"
-                        data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <ul class="nav navbar-nav navbar-right collapse navbar-collapse nav-list">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#us">About Us</a></li>
-                <li><a class="sign-up" href="sign-up">Sign Up</a></li>
-                <li><a class="sign-in" href="sign-in">Sign In</a></li>
-            </ul>
-        </div>
-    </div>
-    </header>
     <!-- Content -->
-    <body>
-    <h1 class="hidden"> PlanHW - Your homework planner</h1>
-        <div class="container">
-            <div class="row well well-lg main">
-                <div class="col-md-6 col-sm-12">
-                    <h2>Planners = Bad</h2>
-                    <p class="lead">Take a look at yours. Planners are a pain to use. They were designed for having a job.
-                        You don't. You're a student. You need a better planner. You need PlanHW.</p>
-                    <button type="button" class="btn btn-lg btn-success sign-up">Sign up</button>
-                </div>
-                <div class="col-md-4 col-md-offset-1 hidden-xs hidden-sm">
-                    <img src="img/planner.jpg" width="380px">
-                </div>
-            </div>
-        </div>
-        <a id="features"></a>
-        <div class="row hidden-xs hidden-sm parallax messy-desk" data-parallax="scroll" data-image-src="img/messy_desk.jpg">
-            <div class="unclutter">
-                    <p class="container lead well-sm well">Unclutter your life with PlanHW.</p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="features">
-                <div class="row">
-                    <div class="col-md-4 col-xs-10 col-md-offset-0 col-xs-offset-1">
-                        <div class="text-center">
-                            <span class="fa-stack fa-5x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-list-alt fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h3>Smart Reminders</h3>
+    <body data-spy="scroll" data-target=".navbar-default">
+        <!-- Navbar -->
+        <header>
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <div class="logo hidden-xs">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="img/PlanHWtrans.png" height="75px">
+                            </a>
                         </div>
-                        <p>Setting a reminder for when it's due doesn't help you <strong>at all.</strong> It just sounds an alarm
-                            on your phone... in class. How in the world is that going to help you? It isn't. PlanHW learns when you do
-                            homework, and alerts you when you can do it. Not when it's due, just when you can do it. And you don't have
-                            to do anything.</p>
+                        <div class="visible-xs">
+                            <a href="#home" class="logo-text navbar-brand">
+                                PlanHW
+                            </a>
+                        </div>
+                        <button type="button" class="btn btn-default navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                     </div>
+                    <ul class="nav navbar-nav navbar-right collapse navbar-collapse nav-list">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#us">About Us</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a class="sign-up" href="sign-up.html">Sign Up</a></li>
+                        <li><a class="sign-in" href="sign-in.html">Sign In</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1 class="hidden">PlanHW - Your homework planner</h1>
+                <div class="container">
+                    <div class="row well well-lg main">
+                        <div class="col-md-6 col-sm-12">
+                            <h2>Planners = Bad</h2>
+                            <p class="lead">Take a look at yours. Planners are a pain to use. They were designed for having a job.
+                                You don't. You're a student. You need a better planner. You need PlanHW.</p>
+                            <button type="button" class="btn btn-lg btn-success sign-up">Sign up</button>
+                        </div>
+                        <div class="col-md-4 col-md-offset-1 hidden-xs hidden-sm">
+                            <img src="img/planner.jpg" width="380px">
+                        </div>
+                    </div>
+                </div>
+                <div class="row hidden-xs hidden-sm parallax messy-desk" data-parallax="scroll" data-image-src="img/messy_desk.jpg">
+                    <div class="unclutter">
+                            <p class="container lead well-sm well">Unclutter your life with PlanHW.</p>
+                    </div>
+                </div>
+                <div id="features" class="container">
+                    <div class="features">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-10 col-md-offset-0 col-xs-offset-1">
+                                <div class="text-center">
+                                    <span class="fa-stack fa-5x">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-list-alt fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <h3>Smart Reminders</h3>
+                                </div>
+                                <p>Setting a reminder for when it's due doesn't help you <strong>at all.</strong> It just sounds an alarm
+                                    on your phone... in class. How in the world is that going to help you? It isn't. PlanHW learns when you do
+                                    homework, and alerts you when you can do it. Not when it's due, just when you can do it. And you don't have
+                                    to do anything.</p>
+                            </div>
 
-                    <div class="col-md-4 col-xs-6 col-sm-6">
-                        <div class="text-center">
-                            <span class="fa-stack fa-5x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h3>Quick Type</h3>
+                            <div class="col-md-4 col-xs-6 col-sm-6">
+                                <div class="text-center">
+                                    <span class="fa-stack fa-5x">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <h3>Quick Type</h3>
+                                </div>
+                                <p>Instead of filling out fields on when to do your homework, type what it is. We are smart enough to
+                                know that "LA paper due Monday" means that you have a paper due Monday for LA. This gives you enough time
+                                to actually pass in your passing period.</p>
+                            </div>
+                            <div class="col-md-4 col-xs-6 col-sm-6 ">
+                                <div class="text-center">
+                                    <span class="fa-stack fa-5x">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-gamepad fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <h3>Gamification</h3>
+                                </div>
+                                <p> Doing homework is boring. Luckily, we teamed up with <a href="https://twitter.com/RazerLazerTazer">
+                                    Egan White</a> to make doing homework fun again. With an easy to use gamification API, developers
+                                    from around the world will be able to make interactive RPG adventures that you complete by doing homework.</p>
+                            </div>
                         </div>
-                        <p>Instead of filling out fields on when to do your homework, type what it is. We are smart enough to
-                        know that "LA paper due Monday" means that you have a paper due Monday for LA. This gives you enough time
-                        to actually pass in your passing period.</p>
                     </div>
-                    <div class="col-md-4 col-xs-6 col-sm-6 ">
-                        <div class="text-center">
-                            <span class="fa-stack fa-5x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-gamepad fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h3>Gamification</h3>
+                </div>
+            <div  class="row hidden-xs hidden-sm parallax books" data-parallax="scroll" data-image-src="img/books.jpg">
+            <div class="container">
+                <div id="pricing" class="row pricing">
+                    <div class="row flat">
+                        <div class="col-lg-3 col-md-3 col-xs-6">
+                            <ul class="plan plan1">
+                                <li class="plan-name">
+                                    Elementry Schooler
+                                </li>
+                                <li class="plan-price">
+                                    <strong>Free</strong> forever
+                                </li>
+                                <li>
+                                    <strong>$1</strong> per game / month
+                                </li>
+                                <li>
+                                    <strong>$10</strong> iOS App
+                                </li>
+                                <li>
+                                    <strong>Basic</strong> Features
+                                </li>
+                                <li class="plan-action">
+                                    <a href="#" class="btn btn-danger btn-lg">Signup</a>
+                                </li>
+                            </ul>
                         </div>
-                        <p> Doing homework is boring. Luckily, we teamed up with <a href="https://twitter.com/RazerLazerTazer">
-                            Egan White</a> to make doing homework fun again. With an easy to use gamification API, developers
-                            from around the world will be able to make interactive RPG adventures that you complete by doing homework.</p>
-                    </div>
+
+                        <div class="col-lg-3 col-md-3 col-xs-6">
+                            <ul class="plan plan2">
+                                <li class="plan-name">
+                                    Middle Schooler
+                                </li>
+                                <li class="plan-price">
+                                    <strong>$1</strong> / month
+                                </li>
+                                <li>
+                                    <strong>1</strong> Free Homework Game
+                                </li>
+                                <li>
+                                    <strong>$5</strong> iOS App
+                                </li>
+                                <li>
+                                    <strong>Smart</strong> Reminders
+                                </li>
+                                <li>
+                                    <strong>Join</strong> Classes
+                                </li>
+                                <li class="plan-action">
+                                    <a href="#" class="btn btn-danger btn-lg">Signup</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-xs-6">
+                            <ul class="plan plan3 featured">
+                                <li class="plan-name">
+                                    High Schooler
+                                </li>
+                                <li class="plan-price">
+                                    <strong>$2</strong> / month
+                                </li>
+                                <li>
+                                    <strong>2</strong> Free Homework Games
+                                </li>
+                                <li>
+                                    <strong>Free</strong> iOS App
+                                </li>
+                                <li>
+                                    <strong>Smart</strong> Reminders
+                                </li>
+                                <li>
+                                    <strong>Smart</strong> Entry
+                                </li>
+                                <li>
+                                    <strong>Join</strong> Classes
+                                </li>
+                                <li class="plan-action">
+                                    <a href="#" class="btn btn-danger btn-lg">Signup</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-xs-6">
+                            <ul class="plan plan4">
+                                <li class="plan-name">
+                                    College Student
+                                </li>
+                                <li class="plan-price">
+                                    <strong>$5</strong> / month
+                                </li>
+                                <li>
+                                    <strong>3</strong> Free Homework Games
+                                </li>
+                                <li>
+                                    <strong>Free</strong> iOS App
+                                </li>
+                                <li>
+                                    <strong>Smart</strong> Reminders
+                                </li>
+                                <li>
+                                    <strong>Smart</strong> Entry
+                                </li>
+                                <li>
+                                    <strong>Create</strong> Classes
+                                </li>
+                                <li>
+                                    <strong>$1 off</strong> for 3 friends
+                                </li>
+                                <li class="plan-action">
+                                    <a href="#" class="btn btn-danger btn-lg">Signup</a>
+                                </li>
+                             </ul>
+                         </div>
+                        </div>
+                 </div>
                 </div>
             </div>
-        </div>
-        <div class="row hidden-xs hidden-sm parallax books" data-parallax="scroll" data-image-src="img/books.jpg"></div>
-        <a id="us"></a>
-        <div class="container who">
-            <div class="row who-are-we">
-                <div class="col-xs-12">
-                    <h2>Who are we?</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 hidden-xs hidden-sm">
-                            <img src="img/penne12.png">
+
+                <div id="us" class="container who">
+                    <div class="row who-are-we">
+                        <div class="col-xs-12">
+                            <h2>Who are we?</h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="row">
-                            <a href="http://bensites.com"><h3 class="text-center">Ben</h3></a>
-                        </div>
-                        <div class="col-sm-8 col-sm-offset-2">
-                            <p>Ben, a student programmer interested in all sorts of
-                                technology, thinks planners are awful. So, he took
-                                it upon himself to fix that. As the CEO and lead developer
-                                of PlanHW, he hopes to change how you do your homework.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 hidden-xs hidden-sm">
-                            <img src="img/Egan.png">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="row">
-                            <a href="https://twitter.com/RazerLazerTazer"><h3 class="text-center">Egan</h3></a>
-                        </div>
-                        <div class="col-sm-8 col-sm-offset-2">
-                            <p>Egan White, a "highly trained unprofessional" student, loves the idea of turning
-                                your homework into a game. He's working on the API for developers to make RPG games that
-                                you will be able to complete by doing homework.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a id="updates"></a>
-        <div class="row">
-            <div class="mailchimp col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
-                <!-- Begin MailChimp Signup Form -->
-                <div id="mc_embed_signup">
-                    <form action="//bensites.us10.list-manage.com/subscribe/post?u=caff1cc095ac2ab7f7c4bc479&amp;id=ad32320af7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
+                        <div class="col-sm-6">
                             <div class="row">
-                                <div class="col-md-12">
-                                    <h2 class="text-center">Sign up for updates</h2>
+                                <div class="col-sm-6 col-sm-offset-3 hidden-xs hidden-sm">
+                                    <img src="img/penne12.png">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mc-field-group input-group">
-                                    <span class="input-group-addon" id="form-email"><i class="fa fa-fw fa-envelope"></i></span>
-                                    <input type="email" value="" name="EMAIL" class="required email form-control"
-                                           placeholder="Email Address" id="mce-EMAIL" aria-describedby="form-email">
+                                <div class="row">
+                                    <a href="http://bensites.com"><h3 class="text-center">Ben</h3></a>
                                 </div>
-                                <div class="mc-field-group input-group">
-                                    <span class="input-group-addon" id="form-user"><i class="fa fa-fw fa-user"></i></span>
-                                    <input type="text" value="" name="FNAME" class="form-control"
-                                           placeholder="First Name" id="mce-FNAME" aria-describedby="form-user">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <p>Ben, a student programmer interested in all sorts of
+                                        technology, thinks planners are awful. So, he took
+                                        it upon himself to fix that. As the CEO and lead developer
+                                        of PlanHW, he hopes to change how you do your homework.</p>
                                 </div>
-                            </div>
-                            <div id="mce-responses" class="clear">
-                                <div class="well well-sm mc-response" id="mce-error-response" style="display:none"></div>
-                                <div class="well well-sm mc-response" id="mce-success-response" style="display:none"></div>
-                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_caff1cc095ac2ab7f7c4bc479_ad32320af7" tabindex="-1" value=""></div>
-                            <div class="col-sm-offset-10 col-xs-1 col-xs-offset-9 subscribe">
-                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
                             </div>
                         </div>
-                    </form>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-3 hidden-xs hidden-sm">
+                                    <img src="img/Egan.png">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row">
+                                    <a href="https://twitter.com/RazerLazerTazer"><h3 class="text-center">Egan</h3></a>
+                                </div>
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <p>Egan White, a "highly trained unprofessional" student, loves the idea of turning
+                                        your homework into a game. He's working on the API for developers to make RPG games that
+                                        you will be able to complete by doing homework.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-                <!--End mc_embed_signup-->
+                <div id="updates" class="row">
+                    <div class="mailchimp col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
+                        <!-- Begin MailChimp Signup Form -->
+                        <div id="mc_embed_signup">
+                            <form action="//bensites.us10.list-manage.com/subscribe/post?u=caff1cc095ac2ab7f7c4bc479&amp;id=ad32320af7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2 class="text-center">Sign up for updates</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mc-field-group input-group">
+                                            <span class="input-group-addon" id="form-email"><i class="fa fa-fw fa-envelope"></i></span>
+                                            <input type="email" value="" name="EMAIL" class="required email form-control"
+                                                   placeholder="Email Address" id="mce-EMAIL" aria-describedby="form-email">
+                                        </div>
+                                        <div class="mc-field-group input-group">
+                                            <span class="input-group-addon" id="form-user"><i class="fa fa-fw fa-user"></i></span>
+                                            <input type="text" value="" name="FNAME" class="form-control"
+                                                   placeholder="First Name" id="mce-FNAME" aria-describedby="form-user">
+                                        </div>
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="well well-sm mc-response" id="mce-error-response" style="display:none"></div>
+                                        <div class="well well-sm mc-response" id="mce-success-response" style="display:none"></div>
+                                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_caff1cc095ac2ab7f7c4bc479_ad32320af7" tabindex="-1" value=""></div>
+                                    <div class="col-sm-offset-10 col-xs-1 col-xs-offset-9 subscribe">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                        <!--End mc_embed_signup-->
+                    </div>
             </div>
-        </div>
+        </main>
+        <!-- This Foot Smells -->
+        <footer>
+            <div class="container-fluid">
+                <div class="hidden-xs">
+                    <div class="col-sm-3">
+                        <h3 class="text-center"><i class="fa fa-twitter fa-2x"></i></h3>
+                        <ul class="list-unstyled text-center">
+                            <li><a href="https://twitter.com/planhw">@PlanHW</a></li>
+                            <li><a href="https://twitter.com/penne12_">@penne12_</a></li>
+                            <li><a href="https://twitter.com/RazerLazerTazer">@RazerLazerTazer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3 class="text-center"><i class="fa fa-laptop fa-2x"></i></h3>
+                        <ul class="list-unstyled text-center">
+                            <li><a href="http://bensites.com">BenSites</a></li>
+                            <li><a href="http://blog.bensites.com">BenSites Blog</a></li>
+                            <li><a href="http://room305.org">Room305</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3 class="text-center">Privacy</h3>
+                        <p class="text-center">
+                            We hate spammers, and long Privacy Policies, too. We would never sell your information, or send
+                            you emails that you would hate. You can always unsubscribe from our mailing list. We are not
+                            responsible for any breach of data, but we try to keep it secure. Anyways, if you read this, have
+                            a <a href="http://www.yelp.com/search?find_desc=cookies">cookie!</a> No, not a computer cookie.
+
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3 class="text-center"><i class="fa fa-phone fa-2x"></i></h3>
+                        <ul class="list-unstyled text-center">
+                            <li><a href="mailto:&#104;&#101;&#108;&#108;&#111;&#64;&#112;&#108;&#97;&#110;&#104;&#119;&#46;&#99;&#111;&#109;?subject=Hello">&#104;&#101;&#108;&#108;&#111;&#64;&#112;&#108;&#97;&#110;&#104;&#119;&#46;&#99;&#111;&#109;</a></li>
+                            <!-- Email encoder: http://ctrlq.org/encode/ -->
+                            <li><a href="https://twitter.com/planhw">Twitter</a></li>
+                            <li><p>(512) 763-2360</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Mobile Footer -->
+                <div class="visible-xs text-center">
+                    <div class="col-xs-6">
+                        <h3><a href="" class="mobile-footer-twitter"><i class="fa fa-twitter"></i></a></h3>
+                        <h3><a href="" class="mobile-footer-email"><i class="fa fa-envelope"></i></a></h3>
+                    </div>
+                    <div class="col-xs-6">
+                        <h3><a href="" class="mobile-footer-phone"><i class="fa fa-phone"></i></a></h3>
+                        <h3><a href="http://bensites.com">BenSites</a></h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
-    <!-- This Foot Smells -->
-    <footer>
-        <div class="container-fluid">
-            <div class="hidden-xs">
-                <div class="col-sm-3">
-                    <h3 class="text-center"><i class="fa fa-twitter fa-2x"></i></h3>
-                    <ul class="list-unstyled text-center">
-                        <li><a href="https://twitter.com/planhw">@PlanHW</a></li>
-                        <li><a href="https://twitter.com/penne12_">@penne12_</a></li>
-                        <li><a href="https://twitter.com/RazerLazerTazer">@RazerLazerTazer</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h3 class="text-center"><i class="fa fa-laptop fa-2x"></i></h3>
-                    <ul class="list-unstyled text-center">
-                        <li><a href="http://bensites.com">BenSites</a></li>
-                        <li><a href="http://blog.bensites.com">BenSites Blog</a></li>
-                        <li><a href="http://room305.org">Room305</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h3 class="text-center">Privacy</h3>
-                    <p class="text-center">
-                        We hate spammers, and long Privacy Policies, too. We would never sell your information, or send
-                        you emails that you would hate. You can always unsubscribe from our mailing list. We are not
-                        responsible for any breach of data, but we try to keep it secure. Anyways, if you read this, have
-                        a <a href="http://www.yelp.com/search?find_desc=cookies">cookie!</a> No, not a computer cookie.
-
-                    </p>
-                </div>
-                <div class="col-sm-3">
-                    <h3 class="text-center"><i class="fa fa-phone fa-2x"></i></h3>
-                    <ul class="list-unstyled text-center">
-                        <li><a href="mailto:&#104;&#101;&#108;&#108;&#111;&#64;&#112;&#108;&#97;&#110;&#104;&#119;&#46;&#99;&#111;&#109;?subject=Hello">&#104;&#101;&#108;&#108;&#111;&#64;&#112;&#108;&#97;&#110;&#104;&#119;&#46;&#99;&#111;&#109;</a></li>
-                        <!-- Email encoder: http://ctrlq.org/encode/ -->
-                        <li><a href="https://twitter.com/planhw">Twitter</a></li>
-                        <li><p>(512) 763-2360</p></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Mobile Footer -->
-            <div class="visible-xs text-center">
-                <div class="col-xs-6">
-                    <h3><a href="" class="mobile-footer-twitter"><i class="fa fa-twitter"></i></a></h3>
-                    <h3><a href="" class="mobile-footer-email"><i class="fa fa-envelope"></i></a></h3>
-                </div>
-                <div class="col-xs-6">
-                    <h3><a href="" class="mobile-footer-phone"><i class="fa fa-phone"></i></a></h3>
-                    <h3><a href="http://bensites.com">BenSites</a></h3>
-                </div>
-            </div>
-        </div>
-    </footer>
     <!-- This is JavaScript  .js         .min.js     .css   .bensites.com.co.uk.us.org.weebly.com.room305.org.cfm... -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
