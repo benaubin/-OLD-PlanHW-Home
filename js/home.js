@@ -40,5 +40,6 @@ function disable(Class){
         alert( "Sorry, most functionality is not available yet. Please sign up for updates." );
         $(this).hide( "slow" );
         window.location.replace("#updates")
+        event.preventDefault()
     });
 }
