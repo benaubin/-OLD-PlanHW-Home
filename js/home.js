@@ -36,7 +36,6 @@ function mobileFooter(){
 
 function disable(Class){
     var disabled = $(Class);
-    disabled.attr("href","#updates");
     disabled.click(function( event ) {
         alert( "Sorry, most functionality is not available yet. Please sign up for updates." );
         $(this).hide( "slow" );
